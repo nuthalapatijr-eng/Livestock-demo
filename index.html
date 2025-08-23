@@ -26,12 +26,22 @@
     h1, h2 {
       margin-bottom: 15px;
     }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
     .feature {
       background: white;
       padding: 20px;
       margin: 15px 0;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      cursor: pointer;
     }
     footer {
       background: #2a7b3f;
@@ -48,20 +58,26 @@
   </header>
 
   <section>
-    <div class="feature">
-      <h2>🐄 RFID Tracking</h2>
-      <p>Track each animal’s location and ID with RFID ear tags.</p>
-    </div>
+    <a href="tracking.html">
+      <div class="feature">
+        <h2>🐄 RFID Tracking</h2>
+        <p>Track each animal’s location and ID with RFID ear tags.</p>
+      </div>
+    </a>
 
-    <div class="feature">
-      <h2>📱 RFID Scanning System</h2>
-      <p>Farmers can scan tags using their phone to instantly view animal details.</p>
-    </div>
+    <a href="scanning.html">
+      <div class="feature">
+        <h2>📱 RFID Scanning System</h2>
+        <p>Farmers can scan tags using their phone to instantly view animal details.</p>
+      </div>
+    </a>
 
-    <div class="feature">
-      <h2>🧪 Integrated Testing</h2>
-      <p>Submit blood and fecal samples with 1-day lab turnaround for disease detection.</p>
-    </div>
+    <a href="testing.html">
+      <div class="feature">
+        <h2>🧪 Integrated Testing</h2>
+        <p>Submit blood and fecal samples with 1-day lab turnaround for disease detection.</p>
+      </div>
+    </a>
   </section>
 
   <footer>
