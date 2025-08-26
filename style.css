@@ -1,0 +1,125 @@
+/* General Page Style */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f9ff;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 0;
+}
+
+/* Animal Profiles Section */
+section {
+  padding: 20px;
+}
+
+h2 {
+  color: #0077cc;
+}
+
+input[type="text"] {
+  margin: 10px 0 20px;
+  padding: 8px;
+  width: 80%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  background: #e6f2ff;
+}
+
+/* Sidebar Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden by default */
+  width: 250px;
+  height: 100%;
+  background: #333;
+  color: white;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+nav a {
+  display: block;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: #444;
+}
+
+/* Hamburger Button */
+.menu-btn {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+}
+
+/* When Sidebar is Active */
+nav.active {
+  left: 0;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 15px;
+  background: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.back-btn:hover {
+  background: #005fa3;
+}
