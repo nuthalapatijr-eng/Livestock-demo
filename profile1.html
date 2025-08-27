@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goat #1 Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hamburger Menu -->
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <a href="index.html">🏠 Home</a>
+    <a href="tracking.html">📍 Location</a>
+    <a href="tests.html">🧪 Tests</a>
+    <a href="vaccinations.html">💉 Vaccinations</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>🐐 Goat #1</h1>
+    <p>Profile & Health Records</p>
+  </header>
+
+  <section>
+    <h2>Details</h2>
+    <ul>
+      <li>ID: G001</li>
+      <li>Age: 2 years</li>
+      <li>Weight: 80 lbs</li>
+      <li>Breed: Boer</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Recent Tests</h2>
+    <p>Blood test: Normal (08/2025)</p>
+  </section>
+
+  <a class="back-btn" href="index.html">⬅ Back</a>
+
+  <!-- Script -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
