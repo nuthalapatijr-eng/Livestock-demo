@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animal Scanning</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hamburger Menu -->
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <a href="index.html">🏠 Home</a>
+    <a href="tracking.html">📍 Location</a>
+    <a href="tests.html">🧪 Tests</a>
+    <a href="scanning.html">🔍 Scanning</a>
+    <a href="vaccinations.html">💉 Vaccinations</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>🔍 Animal Scanning</h1>
+    <p>Scan RFID tags to view animal profiles</p>
+  </header>
+
+  <!-- Scan Simulation -->
+  <section>
+    <h2>Scan an Animal</h2>
+    <p>Click below to simulate scanning an RFID tag:</p>
+    <button onclick="scanAnimal('Goat #1')">📡 Scan Goat #1</button>
+    <button onclick="scanAnimal('Sheep #1')">📡 Scan Sheep #1</button>
+    <button onclick="scanAnimal('Cow #1')">📡 Scan Cow #1</button>
+
+    <div id="scanResult" class="scan-box">
+      <p>No scan yet...</p>
+    </div>
+  </section>
+
+  <a class="back-btn" href="index.html">⬅ Back</a>
+
+  <!-- Script -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+
+    function scanAnimal(animal) {
+      const profiles = {
+        "Goat #1": "ID: G001 | Age: 2 yrs | Weight: 80 lbs | Last Birth: N/A",
+        "Sheep #1": "ID: S001 | Age: 3 yrs | Weight: 120 lbs | Last Birth: Spring 2025",
+        "Cow #1": "ID: C001 | Age: 4 yrs | Weight: 950 lbs | Last Birth: Winter 2024"
+      };
+      document.getElementById("scanResult").innerHTML = 
+        `<h3>${animal} Scanned ✅</h3><p>${profiles[animal]}</p>`;
+    }
+  </script>
+</body>
+</html>
