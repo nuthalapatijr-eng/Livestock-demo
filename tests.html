@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animal Health Tests</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Hamburger Menu -->
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <a href="index.html">🏠 Home</a>
+    <a href="tracking.html">📍 Location</a>
+    <a href="tests.html">🧪 Tests</a>
+    <a href="scanning.html">🔍 Scanning</a>
+    <a href="vaccinations.html">💉 Vaccinations</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>🧪 Animal Health Tests</h1>
+    <p>View diagnostic results and health records</p>
+  </header>
+
+  <!-- Example Test Results -->
+  <section>
+    <h2>Recent Results</h2>
+    <table>
+      <tr>
+        <th>Animal</th>
+        <th>Test Type</th>
+        <th>Date</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td>Goat #1</td>
+        <td>Blood Test</td>
+        <td>08/20/2025</td>
+        <td>Normal</td>
+      </tr>
+      <tr>
+        <td>Sheep #1</td>
+        <td>Parasite Check</td>
+        <td>08/18/2025</td>
+        <td>Clear</td>
+      </tr>
+      <tr>
+        <td>Cow #1</td>
+        <td>Blood Test</td>
+        <td>08/15/2025</td>
+        <td>Slight Anemia</td>
+      </tr>
+    </table>
+  </section>
+
+  <a class="back-btn" href="index.html">⬅ Back</a>
+
+  <!-- Script -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
