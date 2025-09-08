@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livestock Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🐐 Livestock Management</h1>
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+  </header>
+
+  <nav id="menu">
+    <a href="scanning.html">📱 Scanning</a>
+    <a href="tracking.html">🐄 Tracking</a>
+    <a href="tests.html">🧪 Testing</a>
+  </nav>
+
+  <main>
+    <h2>Animal Profiles</h2>
+    <input type="text" id="searchBar" placeholder="Search animals..." onkeyup="searchAnimals()">
+
+    <ul id="animalList">
+      <li><a href="profile1.html">🐐 Goat #1</a></li>
+      <li><a href="profile2.html">🐑 Sheep #1</a></li>
+      <li><a href="profile3.html">🐄 Cow #1</a></li>
+    </ul>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+
+    function searchAnimals() {
+      const input = document.getElementById("searchBar").value.toLowerCase();
+      const animals = document.querySelectorAll("#animalList li");
+
+      animals.forEach(animal => {
+        const text = animal.textContent.toLowerCase();
+        animal.style.display = text.includes(input) ? "" : "none";
+      });
+    }
+  </script>
+</body>
+</html>
